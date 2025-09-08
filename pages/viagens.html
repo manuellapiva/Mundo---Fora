@@ -1,43 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo à Fora</title>
+    <title>Passagens</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>Mundo à Fora</h1>
+    <header>
+        <img src="/assets/img/world.png">
+        <div>
+            <H1>Passagens</H1><br>
             <div class="menu">
                 <ul>
-                    <li><a href="/pages/index.html">Home</a></li>
-                    <li><a href="/pages/viagens.html">Viagens</a></li>
-                    <li><a href="/pages/promos.html">Promoções</a></li>
+                    <li><a href="/pages/index.html"> Home</a></li>
+                    <li><a href="/pages/viagens.html">Passagens</a></li>
+                    <li><a href="/pages/promos.html">Ofertas</a></li>
                 </ul>
+                <div class="btn">
+                    <a href="/pages/form.html">Inscreva-se</a>
+                </div>
             </div>
-        </header>
-        <h2>Inscrição do site</h2>
+        </div>
+    </header>
+
+    <section class="busca">
         <form>
-            <label for="nome">Nome completo</label><br>
-            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <select>
+                <option>Origem</option>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Salvador</option>
+            </select>
+
+            <select>
+                <option>Destino</option>
+                <option>Rio de Janeiro</option>
+                <option>Porto Seguro</option>
+                <option>Recife</option>
+                <option>Nova York</option>
+            </select>
+
+
+            <select>
+                <option>1 Viajante</option>
+                <option>2 Viajantes</option>
+                <option>3 Viajantes</option>
+            </select>
+            <input type="date">
+            <input type="date">
             <br>
-            <label for="email">E-mail</label><br>
-            <input type="email" id="email" placeholder="exemplo@email.com" required>
-            <br>
-            <label for="senha">Senha</label><br>
-            <input type="password" id="senha" placeholder="Digite sua senha" required>
-            <br>
-            <label for="Mensagem">Mensagem</label><br>
-            <input type="text" id="Mensagem" required>
-            <br>
-            <label for="Enviar"></label><br>
-            <input type="button" id="Enviar" value="Enviar">
+            <button type="submit">Buscar</button>
         </form>
-    </div>
+    </section>
+
+
+    <section class="destinos">
+        <card1>
+            <img src="/assets/img/download.jpg" alt="Rio de Janeiro">
+            <h3>Rio de Janeiro</h3>
+            <p>Pacote 3 dias - a partir de R$ 816</p>
+        </card1>
+
+        <card2>
+            <img src="/assets/img/porto.jpg" alt="Porto Seguro">
+            <h3>Porto Seguro</h3>
+            <p>Pacote 4 dias - a partir de R$ 1.416</p>
+        </card2>
+
+        <card3>
+            <img src="/assets/img/recife.jpg" alt="Recife">
+            <h3>Recife</h3>
+            <p>Aéreo ida e volta - a partir de R$ 836</p>
+        </card3>
+
+        <card4>
+            <img src="/assets/img/nyc.jpg" alt="Nova York">
+            <h3>Nova York</h3>
+            <p>Pacote 5 dias - consulte preços</p>
+        </card4>
+    </section>
+    <footer>
+        <h1>Contatos</h1>
+        <div class="foot">
+            <ul>
+                <li><a href="#">Email: Worldaway@gmail.com</a></li>
+                <li><a href="#">Whatsapp: (19) 65234-9871</a></li>
+                <li><a href="#">Telefone: (19) 35269-8741</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
