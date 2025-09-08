@@ -73,7 +73,7 @@ header img {
 }
 
 main img {
-    width: 550px;
+    width: 100%;
     height: 200px;
     border-radius: 10px;
     margin-top: 20px;
@@ -88,10 +88,14 @@ main {
 
 main h2 {
     margin-top: 5px;
+    border-bottom: #000080 solid 2px;
+    padding: 25px;
+    font-size: 30px;
 }
 
 main h3 {
-    padding: 5px;
+    padding:15px;
+    border-bottom: #000080 solid 2px;
 }
 
 main p {
@@ -99,6 +103,7 @@ main p {
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
+
 }
 
 footer {
@@ -244,11 +249,10 @@ button:hover {
   display: flex;
   gap: 30px;
   padding: 20px;
-  max-width: 1200px;
   margin: auto;
 }
 
-card1, card2, card3, card4 {
+card1, card2, card3, card4, card5, card6 {
   width: 100%;
   border-radius: 12px;
   background-color: #fff;
@@ -258,25 +262,36 @@ card1, card2, card3, card4 {
   margin-top: 2rem;
 }
 
-card1 img, card2 img, card3 img, card4 img {
+card1 img, card2 img, card3 img, card4 img, card5 img, card6 img {
   width: 100%;
   height: 160px;
   padding-top: 1rem;
 }
 
-card1 h3, card2 h3, card3 h3, card4 h3 {
+card1 h3, card2 h3, card3 h3, card4 h3, card5 h3, card6 h3 {
   margin: 10px 0 5px;
   font-size: 1.2em;
   color: #016eb6;
 }
 
-card1 p, card2 p, card3 p, card4 p {
+card1 p, card2 p, card3 p, card4 p, card5 p, card6 p {
   margin-bottom: 15px;
   color: #444;
 }
 
 .busca{
     padding-top: 3rem;
+}
+
+.destinos {
+    margin: 0;
+    border-top: #171f65 solid 2px;
+}
+
+.trip {
+    margin: 0.5rem;
+    padding: 0;
+    text-align: center;
 }
 
 @media (max-width: 700px) {
@@ -304,5 +319,13 @@ card1 p, card2 p, card3 p, card4 p {
 
     input {
         width: 500px;
+    }
+
+    .destinos {
+        flex-direction: column;
+        align-items: center;
+    }
+    card1, card2, card3, card4, card5, card6 {
+        width: 80%;
     }
 }
