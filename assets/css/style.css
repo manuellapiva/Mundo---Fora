@@ -161,13 +161,11 @@ footer h1 {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     width: 100px;
 }
 
 .enviar {
     background-color:#016eb6;
-;
     width: 30%;
     font-weight: 800;
 }
